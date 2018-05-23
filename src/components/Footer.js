@@ -43,7 +43,11 @@ class Footer extends React.Component {
             </a>
           </li>
           <li>
-            <a href="#" className="icon alt fa-envelope">
+            <a
+              href="mailto:scottwork.io@gmail.com"
+              target="_blank"
+              className="icon alt fa-envelope"
+            >
               <span className="label">Email</span>
             </a>
           </li>
