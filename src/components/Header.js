@@ -1,10 +1,10 @@
 import React from 'react'
 import Particles from 'react-particles-js'
-import particlesConfig from '../assets/particlesjs-config.json'
+import particlesConfigHeader from '../assets/particlesjs-config-header.json'
 
 class Header extends React.Component {
   render() {
-    var styles = {
+    var particlesStyle = {
       position: 'absolute',
       top: '0px',
       left: '0px',
@@ -13,17 +13,12 @@ class Header extends React.Component {
     }
     return (
       <section id="header">
-        <Particles params={particlesConfig} style={styles} />
+        <Particles params={particlesConfigHeader} style={particlesStyle} />
         <div className="inner">
-          <span className="icon major fa-cloud" />
           <h1>
-            Hi, I'm <strong>Photon</strong>, another fine<br />
-            little freebie from <a href="http://html5up.net">HTML5 UP</a>.
+            <strong>Scott</strong>Works
           </h1>
-          <p>
-            Accumsan feugiat mi commodo erat lorem ipsum, sed magna<br />
-            lobortis feugiat sapien sed etiam volutpat accumsan.
-          </p>
+          <h3>Blockchain & Web Developer | Cyclist | Hiker</h3>
           <ul className="actions">
             <li>
               <a href="#one" className="button scrolly">
