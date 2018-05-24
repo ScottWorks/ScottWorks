@@ -10,13 +10,12 @@ import pic04 from '../assets/images/pic04.jpg'
 class Homepage extends React.Component {
   render() {
     const siteTitle = this.props.data.site.siteMetadata.title
-
+    const tempStyle = { height: '100px', width: '100px' }
     return (
       <div>
         <Helmet title={siteTitle} />
 
         <section id="one" className="main style1">
-          ``
           <div className="grid-wrapper">
             <div className="col-6">
               <header className="major">
@@ -69,35 +68,54 @@ class Homepage extends React.Component {
         </section>
 
         <section id="two" className="main style2">
-          <div className="grid-wrapper">
+          <div className="grid-wrapper container">
             <div className="col-6">
               <ul className="major-icons">
+ 
                 <li>
-                  <span className="icon style1 major fa-code" />
+                  <span className="icon html" />
                 </li>
                 <li>
-                  <span className="icon style2 major fa-bolt" />
+                  <span className="icon css3" />
                 </li>
                 <li>
-                  <span className="icon style3 major fa-camera-retro" />
+                  <span className="icon javascript" />
                 </li>
                 <li>
-                  <span className="icon style4 major fa-cog" />
+                  <span className="icon react" />
                 </li>
                 <li>
-                  <span className="icon style5 major fa-desktop" />
+                  <span className="icon redux" />
                 </li>
                 <li>
-                  <span className="icon style6 major fa-calendar" />
+                  <span className="icon nodejs" />
+                </li>
+                <li>
+                  <span className="icon graphql" />
+                </li>
+                <li>
+                  <span className="icon postgres" />
+                </li>
+                <li>
+                  <span className="icon blockchain" />
+                </li>
+                <li>
+                  <span className="icon ethereum" />
+                </li>
+                <li>
+                  <span className="icon solidity" />
+                </li>
+                <li>
+                  <span className="icon ubuntu" />
+                </li>
+                <li>
+                  <span className="icon git" />
                 </li>
               </ul>
             </div>
             <div className="col-6">
               <header className="major">
-                <h2>
-                  Lorem ipsum dolor adipiscing<br />
-                  amet dolor consequat
-                </h2>
+                <h2>Full Stack</h2>
               </header>
               <p>
                 Adipiscing a commodo ante nunc accumsan interdum mi ante
@@ -189,7 +207,7 @@ class Homepage extends React.Component {
           </div>
         </section>
 
-        <section id="four" className="main style2 special">
+        {/* <section id="four" className="main style2 special">
           <div className="container">
             <header className="major">
               <h2>Ipsum feugiat consequat?</h2>
@@ -208,7 +226,7 @@ class Homepage extends React.Component {
               </li>
             </ul>
           </div>
-        </section>
+        </section> */}
       </div>
     )
   }
