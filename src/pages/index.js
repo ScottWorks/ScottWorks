@@ -10,7 +10,79 @@ import pic04 from '../assets/images/pic04.jpg'
 class Homepage extends React.Component {
   render() {
     const siteTitle = this.props.data.site.siteMetadata.title
-    const tempStyle = { height: '100px', width: '100px' }
+
+    const frontEndArray = [
+      {
+        iconClass: 'html',
+        iconTitle: 'HTML5',
+      },
+      {
+        iconClass: 'css3',
+        iconTitle: 'CSS3',
+      },
+      {
+        iconClass: 'javascript',
+        iconTitle: 'Javascript',
+      },
+      {
+        iconClass: 'react',
+        iconTitle: 'React',
+      },
+      {
+        iconClass: 'redux',
+        iconTitle: 'Redux',
+      },
+      {
+        iconClass: 'graphql',
+        iconTitle: 'GraphQL',
+      },
+    ]
+
+    const backEndArray = [
+      {
+        iconClass: 'nodejs',
+        iconTitle: 'Node',
+      },
+      {
+        iconClass: 'express',
+        iconTitle: 'Express',
+      },
+      {
+        iconClass: 'postgres',
+        iconTitle: 'PostgreSQL',
+      },
+    ]
+
+    const blockChainArray = [
+      {
+        iconClass: 'blockchain',
+        iconTitle: 'Blockchain',
+      },
+      {
+        iconClass: 'ethereum',
+        iconTitle: 'Ethereum',
+      },
+      {
+        iconClass: 'solidity',
+        iconTitle: 'Solidity',
+      },
+    ]
+
+    const otherTechArray = [
+      {
+        iconClass: 'jest',
+        iconTitle: 'Jest',
+      },
+      {
+        iconClass: 'ubuntu',
+        iconTitle: 'Ubuntu',
+      },
+      {
+        iconClass: 'git',
+        iconTitle: 'git',
+      },
+    ]
+
     return (
       <div>
         <Helmet title={siteTitle} />
@@ -69,51 +141,28 @@ class Homepage extends React.Component {
 
         <section id="two" className="main style2">
           <div className="grid-wrapper container">
-            <div className="col-6">
-              <ul className="major-icons">
- 
-                <li>
-                  <span className="icon html" />
-                </li>
-                <li>
-                  <span className="icon css3" />
-                </li>
-                <li>
-                  <span className="icon javascript" />
-                </li>
-                <li>
-                  <span className="icon react" />
-                </li>
-                <li>
-                  <span className="icon redux" />
-                </li>
-                <li>
-                  <span className="icon nodejs" />
-                </li>
-                <li>
-                  <span className="icon graphql" />
-                </li>
-                <li>
-                  <span className="icon postgres" />
-                </li>
-                <li>
-                  <span className="icon blockchain" />
-                </li>
-                <li>
-                  <span className="icon ethereum" />
-                </li>
-                <li>
-                  <span className="icon solidity" />
-                </li>
-                <li>
-                  <span className="icon ubuntu" />
-                </li>
-                <li>
-                  <span className="icon git" />
-                </li>
-              </ul>
+            <div className="col-12">
+              <header className="minor">
+                <h2>Technologies</h2>
+              </header>
+              <header className="minor">
+                <h3>Frontend</h3>
+              </header>
+              <ListIcons iconArray={frontEndArray} />
+              <header className="minor">
+                <h3>Backend</h3>
+              </header>
+              <ListIcons iconArray={backEndArray} />
+              <header className="minor">
+                <h3>Blockchain</h3>
+              </header>
+              <ListIcons iconArray={blockChainArray} />
+              <header className="minor">
+                <h3>Other Technologies</h3>
+              </header>
+              <ListIcons iconArray={otherTechArray} />
             </div>
-            <div className="col-6">
+            {/* <div className="col-6">
               <header className="major">
                 <h2>Full Stack</h2>
               </header>
@@ -138,7 +187,7 @@ class Homepage extends React.Component {
                 nascetur ac non. Lorem curae eu ante amet sapien in tempus ac.
                 Adipiscing id accumsan adipiscing ipsum.
               </p>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -146,11 +195,8 @@ class Homepage extends React.Component {
           <div className="grid-wrapper">
             <div className="col-12">
               <header className="major">
-                <h2>Adipiscing amet consequat</h2>
+                <h2>Past Projects</h2>
               </header>
-              <p>
-                Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.
-              </p>
             </div>
 
             <div className="col-4">
@@ -230,6 +276,26 @@ class Homepage extends React.Component {
       </div>
     )
   }
+}
+
+const ListIcons = ({ iconArray }) => {
+  return (
+    <ul className="major-icons">
+      {iconArray.map((elem, idx) => {
+        return (
+          <li className="minor-icon" key={idx}>
+            {/* <span className={`icon ${elem.iconClass}`} /> */}
+            <img
+              className={`icon ${elem.iconClass}`}
+              src={`../assets/icons/${elem.iconClass}`}
+              alt=""
+            />
+            <h4>{elem.iconTitle}</h4>
+          </li>
+        )
+      })}
+    </ul>
+  )
 }
 
 Homepage.propTypes = {

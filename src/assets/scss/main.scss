@@ -82,6 +82,7 @@ i {
 
 p {
   margin: 0 0 _size(element-margin) 0;
+  text-align: justify;
 }
 
 h1,
@@ -244,6 +245,24 @@ header {
       margin-top: (_size(element-margin) * 0.75);
       width: 6em;
     }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+    }
+
+    p {
+      margin: (_size(element-margin) * 0.35) 0 0 0;
+    }
+  }
+
+  &.minor {
+    margin: 0 0 (_size(element-margin) * 0.5) 0;
+    display: flex;
+    justify-content: center;
 
     h2,
     h3,
@@ -614,16 +633,19 @@ ul {
   &.major-icons {
     list-style: none;
     padding-left: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
     li {
       display: inline-block;
-      padding: 1.25em 2.5em 1.25em 0em;
+      padding: 1.25em 1.25em 1.25em 1.25em;
       text-align: center;
 
       .icon {
         // @include vendor('transform', 'rotate(45deg)');
-        border-radius: _size(border-radius);
-        border: solid 1px _palette(border);
+        border-radius: 8px;
+        // border: solid 1px _palette(border);
         display: inline-block;
         height: 5em;
         line-height: 8em;
@@ -983,6 +1005,7 @@ button,
 
   &.style2 {
     @include dark(#333);
+    padding: 7em 0;
     background-attachment: fixed, fixed;
     background-size: auto, cover;
     background-color: #221f20;
@@ -1071,7 +1094,7 @@ button,
   background-size: auto, cover, cover;
   text-align: center;
 
-  .icons {  
+  .icons {
     margin: 0;
   }
 
@@ -1099,7 +1122,15 @@ button,
 
 .container {
   background-color: rgba(34, 31, 32, 0.8);
-  padding: 24px;
+  padding: 3em;
+  display: flex;
+  justify-content: center;
+}
+
+.minor-icon {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* XLarge */
@@ -1167,6 +1198,7 @@ button,
 
     &.style2 {
       background-attachment: scroll;
+      padding: 4em 0;
     }
   }
 
@@ -1272,12 +1304,12 @@ button,
   ul {
     &.major-icons {
       li {
-        padding: 1.5em;
+        padding: 1em;
 
         .icon {
-          height: 5em;
+          height: 3.5em;
           line-height: 5em;
-          width: 5em;
+          width: 3em;
 
           &:before {
             font-size: 42px;
@@ -1453,7 +1485,7 @@ button,
 .html {
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url('../icons/html5.svg');
+  background-image: url('../icons/html.svg');
 }
 
 .css3 {
@@ -1468,7 +1500,6 @@ button,
   background-image: url('../icons/javascript.svg');
 }
 
-
 .react {
   background-size: contain;
   background-repeat: no-repeat;
@@ -1481,16 +1512,22 @@ button,
   background-image: url('../icons/redux.svg');
 }
 
+.graphql {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../icons/graphql.svg');
+}
+
 .nodejs {
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url('../icons/nodejs.svg');
 }
 
-.graphql {
+.express {
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url('../icons/graphQL.svg');
+  background-image: url('../icons/express.svg');
 }
 
 .postgres {
@@ -1505,16 +1542,22 @@ button,
   background-image: url('../icons/blockchain.svg');
 }
 
+.ethereum {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../icons/ethereum.svg');
+}
+
 .solidity {
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url('../icons/solidity.svg');
 }
 
-.ethereum {
+.jest {
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url('../icons/ethereum.svg');
+  background-image: url('../icons/jest.svg');
 }
 
 .ubuntu {
