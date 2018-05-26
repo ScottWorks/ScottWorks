@@ -616,7 +616,7 @@ ul {
 
     li {
       display: inline-block;
-      padding: 0 1.25em 0 0;
+      padding: 0 1.75em 0 0;
 
       &:last-child {
         padding-right: 0;
@@ -624,7 +624,7 @@ ul {
 
       .icon {
         &:before {
-          font-size: 1.5em;
+          font-size: 2.5em;
         }
       }
     }
@@ -1095,7 +1095,7 @@ button,
   text-align: center;
 
   .icons {
-    margin: 0;
+    margin: 2em;
   }
 
   .copyright {
@@ -1495,6 +1495,8 @@ button,
 }
 
 .javascript {
+  margin: 0 auto;
+  display: block;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url('../icons/javascript.svg');
@@ -1519,6 +1521,8 @@ button,
 }
 
 .nodejs {
+  margin: 0 auto;
+  display: block;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url('../icons/nodejs.svg');
@@ -1543,6 +1547,8 @@ button,
 }
 
 .ethereum {
+  margin: 0 auto;
+  display: block;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url('../icons/ethereum.svg');
@@ -1555,6 +1561,8 @@ button,
 }
 
 .jest {
+  margin: 0 auto;
+  display: block;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url('../icons/jest.svg');
