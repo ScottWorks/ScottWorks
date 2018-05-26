@@ -644,7 +644,7 @@ ul {
 
       .icon {
         // @include vendor('transform', 'rotate(45deg)');
-        border-radius: 8px;
+        // border-radius: 8px;
         // border: solid 1px _palette(border);
         display: inline-block;
         height: 5em;
@@ -1555,6 +1555,8 @@ button,
 }
 
 .solidity {
+  margin: 0 auto;
+  display: block;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url('../icons/solidity.svg');
