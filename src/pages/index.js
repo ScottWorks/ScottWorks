@@ -2,7 +2,10 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
-import pic01 from '../assets/images/pic01.jpg'
+import nodelocator from '../assets/images/nodelocator.png'
+import altheadash from '../assets/images/altheadash.png'
+import testify from '../assets/images/testify.png'
+import profile from '../assets/images/profilepic.jpg'
 import pic02 from '../assets/images/pic02.jpg'
 import pic03 from '../assets/images/pic03.jpg'
 import pic04 from '../assets/images/pic04.jpg'
@@ -132,8 +135,8 @@ class Homepage extends React.Component {
               </ul>
             </div>
             <div className="col-6">
-              <span className="image fit">
-                <img src={pic01} alt="" />
+              <span id="profilePic" className="image fit">
+                <img src={profile} alt="" />
               </span>
             </div>
           </div>
@@ -162,32 +165,6 @@ class Homepage extends React.Component {
               </header>
               <ListIcons iconArray={otherTechArray} />
             </div>
-            {/* <div className="col-6">
-              <header className="major">
-                <h2>Full Stack</h2>
-              </header>
-              <p>
-                Adipiscing a commodo ante nunc accumsan interdum mi ante
-                adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus
-                nascetur ac non. Lorem curae eu ante amet sapien in tempus ac.
-                Adipiscing id accumsan adipiscing ipsum.
-              </p>
-              <p>
-                Blandit faucibus proin. Ac aliquam integer adipiscing enim non
-                praesent vis commodo nunc phasellus cubilia ac risus accumsan.
-                Accumsan blandit. Lobortis phasellus non lobortis dit varius mi
-                varius accumsan lobortis. Blandit ante aliquam lacinia lorem
-                lobortis semper morbi col faucibus vitae integer placerat
-                accumsan orci eu mi odio tempus adipiscing adipiscing adipiscing
-                curae consequat feugiat etiam dolore.
-              </p>
-              <p>
-                Adipiscing a commodo ante nunc accumsan interdum mi ante
-                adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus
-                nascetur ac non. Lorem curae eu ante amet sapien in tempus ac.
-                Adipiscing id accumsan adipiscing ipsum.
-              </p>
-            </div> */}
           </div>
         </section>
 
@@ -201,16 +178,22 @@ class Homepage extends React.Component {
 
             <div className="col-4">
               <span className="image fit">
-                <img src={pic02} alt="" />
+                <img src={testify} alt="" />
               </span>
-              <h3>Magna feugiat lorem</h3>
+              <h3>Testi-fy</h3>
               <p>
-                Adipiscing a commodo ante nunc magna lorem et interdum mi ante
-                nunc lobortis non amet vis sed volutpat et nascetur.
+                Testi-fy is a Test Management Solution designed to lower
+                friction associated with engineering team collaboration as well
+                as provide a centralized storage location for document and
+                artifact storage.
               </p>
               <ul className="actions">
                 <li>
-                  <a href="#" className="button">
+                  <a
+                    href="https://testi-fy.scottworks.io/#/"
+                    target="_blank"
+                    className="button"
+                  >
                     More
                   </a>
                 </li>
@@ -218,16 +201,24 @@ class Homepage extends React.Component {
             </div>
             <div className="col-4">
               <span className="image fit">
-                <img src={pic03} alt="" />
+                <img src={nodelocator} alt="" />
               </span>
-              <h3>Magna feugiat lorem</h3>
+              <h3>Althea Node Locator</h3>
               <p>
-                Adipiscing a commodo ante nunc magna lorem et interdum mi ante
-                nunc lobortis non amet vis sed volutpat et nascetur.
+                The Node Locator utilizes Google Maps API + Firebase Realtime
+                Database to provide a visual representation of the approximate
+                location of potential nodes in the althea network. This
+                application can be integrated into a website or platform that
+                requires the collection of user data that can be displayed on a
+                map.
               </p>
               <ul className="actions">
                 <li>
-                  <a href="#" className="button">
+                  <a
+                    href="https://github.com/ScottWorks/Althea-Node-Locator"
+                    target="_blank"
+                    className="button"
+                  >
                     More
                   </a>
                 </li>
@@ -235,16 +226,21 @@ class Homepage extends React.Component {
             </div>
             <div className="col-4">
               <span className="image fit">
-                <img src={pic04} alt="" />
+                <img src={altheadash} alt="" />
               </span>
-              <h3>Magna feugiat lorem</h3>
+              <h3>Althea Dashboard</h3>
               <p>
-                Adipiscing a commodo ante nunc magna lorem et interdum mi ante
-                nunc lobortis non amet vis sed volutpat et nascetur.
+                The Althea Dashboard is an application built on top of React
+                that allows users to change settings on their router, view
+                balances, and interact with other nodes in the network.
               </p>
               <ul className="actions">
                 <li>
-                  <a href="#" className="button">
+                  <a
+                    href="https://github.com/althea-mesh/althea-dash"
+                    target="_blank"
+                    className="button"
+                  >
                     More
                   </a>
                 </li>
@@ -252,27 +248,6 @@ class Homepage extends React.Component {
             </div>
           </div>
         </section>
-
-        {/* <section id="four" className="main style2 special">
-          <div className="container">
-            <header className="major">
-              <h2>Ipsum feugiat consequat?</h2>
-            </header>
-            <p>Sed lacus nascetur ac ante amet sapien.</p>
-            <ul className="actions uniform">
-              <li>
-                <a href="#" className="button special">
-                  Sign Up
-                </a>
-              </li>
-              <li>
-                <a href="#" className="button">
-                  Learn More
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section> */}
       </div>
     )
   }

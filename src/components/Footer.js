@@ -42,6 +42,15 @@ class Footer extends React.Component {
               <span className="label">GitHub</span>
             </a>
           </li>
+                    <li>
+            <a
+              href="https://www.linkedin.com/in/cescott997/"
+              target="_blank"
+              className="icon alt fa-linkedin"
+            >
+              <span className="label">Linkedin</span>
+            </a>
+          </li>
           <li>
             <a
               href="mailto:scottwork.io@gmail.com"

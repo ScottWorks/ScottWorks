@@ -569,6 +569,7 @@ input[type='radio'] {
 
     img {
       width: 100%;
+      min-height: 200px;
     }
   }
 }
@@ -1183,9 +1184,9 @@ button,
         padding: 2em;
 
         .icon {
-          height: 8em;
-          line-height: 8em;
-          width: 8em;
+          height: 4.5em;
+          line-height: 4.5em;
+          width: 4.5em;
         }
       }
     }
@@ -1232,9 +1233,9 @@ button,
         padding: 2em;
 
         .icon {
-          height: 7em;
-          line-height: 7em;
-          width: 7em;
+          height: 4.5em;
+          line-height: 4.5em;
+          width: 4.5em;
         }
       }
     }
@@ -1308,7 +1309,7 @@ button,
 
         .icon {
           height: 3.5em;
-          line-height: 5em;
+          line-height: 3.5em;
           width: 3em;
 
           &:before {
