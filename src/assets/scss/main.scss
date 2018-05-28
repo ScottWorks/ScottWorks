@@ -1028,6 +1028,11 @@ button,
 
   h1 {
     margin: 0;
+    font-weight: 900;
+  }
+
+  h3 {
+    font-weight: 500;
   }
 
   p {
@@ -1101,6 +1106,7 @@ button,
 
   .copyright {
     font-size: 0.8em;
+    font-weight: 600;
     list-style: none;
     margin: _size(element-margin) 0 0 0;
     padding: 0;
@@ -1149,7 +1155,9 @@ button,
   /* Header */
 
   #header {
-    // @include padding(6em, 0, (0, 0, _size(element-margin), 0));
+    .mobile {
+      display: none;
+    }
   }
 }
 
@@ -1212,6 +1220,9 @@ button,
     br {
       display: inline;
     }
+    .mobile {
+      display: none;
+    }
   }
 
   /* Footer */
@@ -1219,6 +1230,10 @@ button,
   #footer {
     @include padding(4em, 0, (0, 0, _size(element-margin), 0));
     background-attachment: scroll;
+
+    .mobile {
+      display: inline;
+    }
   }
 }
 
@@ -1251,12 +1266,19 @@ button,
 
   #header {
     // @include padding(8em, 3em, (0, 0, _size(element-margin), 0));
+    .mobile {
+      display: none;
+    }
   }
 
   /* Footer */
 
   #footer {
     @include padding(5em, 3em, (0, 0, _size(element-margin), 0));
+
+    .mobile {
+      display: inline;
+    }
   }
 
   /* One */
@@ -1353,12 +1375,19 @@ button,
     .actions {
       margin: _size(element-margin) 0 0 0;
     }
+    .mobile {
+      display: none;
+    }
   }
 
   /* Footer */
 
   #footer {
     @include padding(3em, 1.5em, (0, 0, _size(element-margin), 0));
+
+    .mobile {
+      display: inline;
+    }
   }
 }
 
@@ -1428,6 +1457,13 @@ button,
     br {
       display: none;
     }
+
+    .mobile {
+      display: inline;
+    }
+    .desktop {
+      display: none;
+    }
   }
 
   /* Footer */
@@ -1455,6 +1491,14 @@ button,
       &:before {
         font-size: 2em;
       }
+    }
+
+    .mobile {
+      display: inline;
+    }
+
+    .desktop {
+      display: none;
     }
   }
 }

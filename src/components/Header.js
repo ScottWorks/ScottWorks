@@ -1,6 +1,7 @@
 import React from 'react'
 import Particles from 'react-particles-js'
-import particlesConfigHeader from '../assets/particlesjs-config-header.json'
+import particlesDesktop from '../assets/particlesjs-desktop.json'
+import particlesMobile from '../assets/particlesjs-mobile.json'
 
 class Header extends React.Component {
   render() {
@@ -13,7 +14,13 @@ class Header extends React.Component {
     }
     return (
       <section id="header">
-        <Particles params={particlesConfigHeader} style={particlesStyle} />
+        <div className="desktop">
+          <Particles params={particlesDesktop} style={particlesStyle} />
+        </div>
+
+        <div className="mobile">
+          <Particles params={particlesMobile} style={particlesStyle} />
+        </div>
         <div className="inner">
           <h1>
             <strong>Scott</strong>Works
