@@ -6,9 +6,6 @@ import nodelocator from '../assets/images/nodelocator.png'
 import altheadash from '../assets/images/altheadash.png'
 import testify from '../assets/images/testify.png'
 import profile from '../assets/images/profilepic.jpg'
-import pic02 from '../assets/images/pic02.jpg'
-import pic03 from '../assets/images/pic03.jpg'
-import pic04 from '../assets/images/pic04.jpg'
 
 class Homepage extends React.Component {
   render() {
@@ -92,7 +89,7 @@ class Homepage extends React.Component {
 
         <section id="one" className="main style1">
           <div className="grid-wrapper">
-            <div className="col-6">
+            <div className="col-8">
               <header className="major">
                 <h2>About Me</h2>
               </header>
@@ -134,7 +131,7 @@ class Homepage extends React.Component {
                 </li>
               </ul>
             </div>
-            <div className="col-6">
+            <div className="col-4">
               <span id="profilePic" className="image fit">
                 <img src={profile} alt="" />
               </span>
