@@ -97,7 +97,7 @@ class Homepage extends React.Component {
                 My name is Courtney Eugene Scott, I'm a deep thinker who enjoys
                 solving difficult problems, building feature rich applications,
                 and personal growth hacking. I traded in the corporate grind for
-                the startup hustle becasue I thrive when working on teams that
+                the startup hustle because I thrive when working on teams that
                 require innovative thinking and a diverse skillset.
               </p>
               <ul className="actions">
@@ -256,7 +256,6 @@ const ListIcons = ({ iconArray }) => {
       {iconArray.map((elem, idx) => {
         return (
           <li className="minor-icon" key={idx}>
-            {/* <span className={`icon ${elem.iconClass}`} /> */}
             <img
               className={`icon ${elem.iconClass}`}
               src={`../assets/icons/${elem.iconClass}`}
