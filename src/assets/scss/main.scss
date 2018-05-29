@@ -1256,6 +1256,10 @@ button,
     }
   }
 
+  #profilePic {
+    display: none;
+  }
+
   /* Main */
 
   .main {
@@ -1361,6 +1365,10 @@ button,
     line-height: 3em;
   }
 
+  #profilePic {
+    display: none;
+  }
+
   /* Main */
 
   .main {
@@ -1441,6 +1449,10 @@ button,
   input[type='button'],
   .button {
     padding: 0;
+  }
+
+  #profilePic {
+    display: inline;
   }
 
   /* Main */

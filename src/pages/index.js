@@ -94,11 +94,11 @@ class Homepage extends React.Component {
                 <h2>About Me</h2>
               </header>
               <p>
-                Developer with a diverse engineering background motivated to
-                build tomorrows blockchain/ web applications. Currently I have
-                experience developing applications with JavaScript, Solidity,
-                React/ Redux, Truffle, Node, Express, Firebase, Postgres (SQL),
-                as well as other technologies.
+                My name is Courtney Eugene Scott, I'm a deep thinker who enjoys
+                solving difficult problems, building feature rich applications,
+                and personal growth hacking. I traded in the corporate grind for
+                the startup hustle becasue I thrive when working on teams that
+                require innovative thinking and a diverse skillset.
               </p>
               <ul className="actions">
                 <li>
