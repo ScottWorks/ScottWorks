@@ -1245,12 +1245,12 @@ button,
   ul {
     &.major-icons {
       li {
-        padding: 2em;
+        padding: 1.25em;
 
         .icon {
-          height: 4.5em;
-          line-height: 4.5em;
-          width: 4.5em;
+          height: 4.25em;
+          line-height: 4.25em;
+          width: 4.25em;
         }
       }
     }
@@ -1263,7 +1263,7 @@ button,
   /* Main */
 
   .main {
-    @include padding(5em, 3em);
+    @include padding(5em, 4em);
   }
 
   /* Header */
@@ -1331,12 +1331,12 @@ button,
   ul {
     &.major-icons {
       li {
-        padding: 1em;
+        padding: 0.65em;
 
         .icon {
-          height: 3.5em;
-          line-height: 3.5em;
-          width: 3em;
+          height: 2.8em;
+          line-height: 2.8em;
+          width: 2.8em;
 
           &:before {
             font-size: 42px;
@@ -1372,7 +1372,7 @@ button,
   /* Main */
 
   .main {
-    @include padding(3em, 1.5em);
+    @include padding(3em, 3em);
   }
 
   /* Header */
@@ -1458,7 +1458,7 @@ button,
   /* Main */
 
   .main {
-    @include padding(2em, 1.5em);
+    @include padding(4em, 2em);
   }
 
   /* Header */
@@ -1528,7 +1528,7 @@ button,
   /* Main */
 
   .main {
-    @include padding(2em, 1em);
+    @include padding(4em, 2em);
   }
 
   /* Footer */
