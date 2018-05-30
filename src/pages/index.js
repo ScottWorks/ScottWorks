@@ -102,31 +102,8 @@ class Homepage extends React.Component {
               </p>
               <ul className="actions">
                 <li>
-                  <a
-                    href="https://medium.com/@scottworks"
-                    target="_blank"
-                    className="button"
-                  >
-                    Writing
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://twitter.com/ScottWxrks"
-                    target="_blank"
-                    className="button"
-                  >
-                    Thoughts
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="../assets/Courtney_Scott_Resume.pdf"
-                    target="_blank"
-                    className="button"
-                    download
-                  >
-                    Resume
+                  <a href="#footer" className="button">
+                    Let's Connect
                   </a>
                 </li>
               </ul>
