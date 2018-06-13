@@ -96,7 +96,7 @@ class Homepage extends React.Component {
               <p>
                 My name is Courtney Eugene Scott, I'm a deep thinker who enjoys
                 solving complex problems, building businesses,
-                and personal growth hacking.
+                and personal growth hacking. I enjoy the startup culture because I thrive when working on teams that require innovative thinking and a diverse skillset.
               </p>
               <ul className="actions">
                 <li>
