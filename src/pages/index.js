@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 
 import nodelocator from '../assets/images/nodelocator.png'
 import altheadash from '../assets/images/altheadash.png'
-import testify from '../assets/images/testify.png'
+import nonprofit from '../assets/images/nonprofit.png'
 import profile from '../assets/images/profilepic.jpg'
 
 class Homepage extends React.Component {
@@ -95,10 +95,8 @@ class Homepage extends React.Component {
               </header>
               <p>
                 My name is Courtney Eugene Scott, I'm a deep thinker who enjoys
-                solving difficult problems, building feature rich applications,
-                and personal growth hacking. I traded in the corporate grind for
-                the startup hustle because I thrive when working on teams that
-                require innovative thinking and a diverse skillset.
+                solving complex problems, building businesses,
+                and personal growth hacking.
               </p>
               <ul className="actions">
                 <li>
@@ -152,19 +150,18 @@ class Homepage extends React.Component {
 
             <div className="col-4">
               <span className="image fit">
-                <img src={testify} alt="" />
+                <img src={nonprofit} alt="" />
               </span>
-              <h3>Testi-fy</h3>
+              <h3>Food-Connect</h3>
               <p>
-                Testi-fy is a Test Management Solution designed to lower
-                friction associated with engineering team collaboration as well
-                as provide a centralized storage location for document and
-                artifact storage.
+              The goal of Food-Connect is to provide a platform for fast and efficient distribution of food donations to non-profit organizations that interacts directly with families in need. Food-Connect will act as both a network that connects parties as
+                well as a marketplace that facilitates the transactions between
+                businesses and non-profits.
               </p>
               <ul className="actions">
                 <li>
                   <a
-                    href="https://testi-fy.scottworks.io/#/"
+                    href="http://www.food-connect.net/"
                     target="_blank"
                     className="button"
                   >
