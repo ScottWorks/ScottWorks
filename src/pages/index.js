@@ -95,8 +95,10 @@ class Homepage extends React.Component {
               </header>
               <p>
                 My name is Courtney Eugene Scott, I'm a deep thinker who enjoys
-                solving complex problems, building businesses,
-                and personal growth hacking. I enjoy the startup culture because I thrive when working on teams that require innovative thinking and a diverse skillset.
+                solving complex problems, building businesses, and personal
+                growth hacking. I enjoy the startup culture because I thrive
+                when working on teams that require innovative thinking and a
+                diverse skillset.
               </p>
               <ul className="actions">
                 <li>
@@ -144,7 +146,7 @@ class Homepage extends React.Component {
           <div className="grid-wrapper">
             <div className="col-12">
               <header className="major">
-                <h2>Past Projects</h2>
+                <h2>Projects</h2>
               </header>
             </div>
 
@@ -154,7 +156,10 @@ class Homepage extends React.Component {
               </span>
               <h3>Food-Connect</h3>
               <p>
-              The goal of Food-Connect is to provide a platform for fast and efficient distribution of food donations to non-profit organizations that interacts directly with families in need. Food-Connect will act as both a network that connects parties as
+                The goal of Food-Connect is to provide a platform for fast and
+                efficient distribution of food donations to non-profit
+                organizations that interacts directly with families in need.
+                Food-Connect will act as both a network that connects parties as
                 well as a marketplace that facilitates the transactions between
                 businesses and non-profits.
               </p>
