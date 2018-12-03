@@ -21,18 +21,69 @@ class Header extends React.Component {
         <div className="mobile">
           <Particles params={particlesMobile} style={particlesStyle} />
         </div>
+
         <div className="inner">
-          <h1>
-            <strong>Scott</strong>Works
-          </h1>
-          <h3>Blockchain & Web Developer | Cyclist | Hiker</h3>
-          <ul className="actions">
-            <li>
-              <a href="#one" className="button scrolly">
-                Discover
-              </a>
-            </li>
-          </ul>
+          <h1>Courtney E. Scott</h1>
+          <h3>
+            Freelance Software Developer, specializing in Blockchain and Web
+            technologies.
+          </h3>
+
+          <div style={{ 'margin-top': '32px' }}>
+            <div className="desktop">
+              <Particles params={particlesDesktop} style={particlesStyle} />
+            </div>
+            <div className="mobile">
+              <Particles params={particlesMobile} style={particlesStyle} />
+            </div>
+            <ul className="icons">
+              <li>
+                <a
+                  href="https://twitter.com/ScottWxrks"
+                  target="_blank"
+                  className="icon alt fa-twitter"
+                >
+                  <span className="label">Twitter</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://medium.com/@scottworks"
+                  target="_blank"
+                  className="icon alt fa-medium"
+                >
+                  <span className="label">Medium</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="http://github.com/ScottWorks"
+                  target="_blank"
+                  className="icon alt fa-github"
+                >
+                  <span className="label">GitHub</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/cescott997/"
+                  target="_blank"
+                  className="icon alt fa-linkedin"
+                >
+                  <span className="label">Linkedin</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:cescott@scottwork.io"
+                  target="_blank"
+                  className="icon alt fa-envelope"
+                >
+                  <span className="label">Email</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     )
