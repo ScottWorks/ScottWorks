@@ -51,7 +51,7 @@ class Footer extends React.Component {
           </li>
           <li>
             <a
-              href="https://www.linkedin.com/in/cescott997/"
+              href="https://www.linkedin.com/in/scottworksio/"
               target="_blank"
               className="icon alt fa-linkedin"
             >
