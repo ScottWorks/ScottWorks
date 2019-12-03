@@ -23,7 +23,7 @@ class Header extends React.Component {
 				</div>
 
 				<div className="inner">
-					<h1>Courtney E. Scott</h1>
+					<h1>Scottworks Consulting</h1>
 					<h3>
 						Software Engineering | Web & Mobile Applications
           </h3>
